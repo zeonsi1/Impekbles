@@ -1,6 +1,9 @@
 :root {
-
+    --fuentePrincipal : 'PT Sans', sans-serif;
+    --fuenteEnlaces : 'A'
 }
+
+/* Globales */
 
 html {
     box-sizing: border-box;
@@ -11,15 +14,24 @@ html {
     box-sizing: inherit;
 }
 
-.contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 3rem;
+h1, h2, h3, h4, a {
+    font-family: var(--fuentePrincipal);
+    line-height: 1.2;
 }
 
-.navegacion { 
-    display: flex;
+img {
+    max-width: 100%;
+}
+
+/* Header */
+.contenedor {
+    padding-top: 2rem;
+    text-align: center;
+    background-color: black;
+    padding-bottom: 2rem;
+}
+
+.navegacion {
     margin-top: 4rem;
     gap: 2rem;
     padding-right: 10rem;
@@ -29,7 +41,7 @@ html {
     display: block;
     text-align: center;
     font-size: 1.8rem;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -37,8 +49,18 @@ html {
     color: #F1E228;
 }
 
-a {
-    text-decoration: none;
+@media (min-width: 768px) {
+    .navegacion {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 /* PRODUCTOS */
