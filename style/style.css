@@ -1,22 +1,17 @@
 :root {
     --fuentePrincipal : 'PT Sans', sans-serif;
-<<<<<<< Updated upstream
     --fuenteEnlaces : 'Open Sans', sans-serif;
-=======
-    --fuenteEnlaces : 'A';
+
+    --colorNav : #F1E228;
     --colorFondo: #F5F5F5;
     --colorPrincipal: #F1E228;
->>>>>>> Stashed changes
 }
 
 /* Globales */
 
-body {
-    background-color: var(--colorFondo);
-}
-
 html {
     box-sizing: border-box;
+    font-size: 62.5%;/* 1 rem = 10px */
 }
 
 *, *:before, *:after {
@@ -64,20 +59,16 @@ img {
 .navegacion-enlace {
     display: block;
     text-align: center;
-    /* font-size: 1.8rem; */
+    font-size: 1.8rem;
     color: white;
     font-family: var(--fuenteEnlaces);
     font-weight: bold;
-<<<<<<< Updated upstream
 
     padding-top: 1rem;
-=======
-    /*font-size: 62.5%;/* 1 rem = 10px */
->>>>>>> Stashed changes
 }
 
 .navegacion-enlace:hover {
-    color: var(--colorPrincipal);
+    color: var(--colorNav);
 }
 
 @media (min-width: 768px) {
@@ -109,7 +100,7 @@ img {
     }
 }
 
-/* PRODUCTOS */
+/* Productos */
 
 .cableaux a {
     font-weight: bold;
@@ -119,7 +110,7 @@ img {
 }
 
 .mi-card {
-    width: 200px;
+    width: 20rem;
     border: 1px solid #EEEEEE;
     background-color: white;
     margin: 5px;
@@ -154,16 +145,11 @@ img {
     border-radius: 5px;
     width: 100%;
     display: block;
-    
+
 }
 .mi-card-btn:hover{
     text-decoration: none;
     color: var(--colorPrincipal);
-}
-
-h1{
-    margin-top: 20px;
-    margin-left: 20px;
 }
 
 .carousel-indicators li {
@@ -184,6 +170,3 @@ h1{
     background-color: var(--colorPrincipal);
 }
 
-img{
-    max-height: 400px;
-}
