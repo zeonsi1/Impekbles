@@ -102,6 +102,12 @@ img {
 
 /* Productos */
 
+.productos {
+    margin-top: 4rem;
+    text-align: center;
+    font-family: var(--fuenteEnlaces);
+}
+
 .cableaux a {
     font-weight: bold;
     font-size: large;
@@ -170,3 +176,12 @@ img {
     background-color: var(--colorPrincipal);
 }
 
+/* Cable Aux */
+.nombre-cable {
+    text-align: center;
+    margin: 4rem 0 0 0;
+}
+
+.separador {
+    margin-bottom: 4rem;
+}
