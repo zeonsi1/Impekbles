@@ -100,6 +100,41 @@ img {
     }
 }
 
+/* Main */
+.titulo-contenido {
+    text-align: center;
+    margin: 6rem 0 2rem 0;
+    text-transform: uppercase;
+    font-family: var(--fuenteEnlaces);
+    font-weight: bold;
+}
+
+.redimensionar {
+    height: 30rem;
+}
+
+.slogan {
+    font-size: 1.8rem;
+    font-family: var(--fuentePrincipal);
+}
+
+.boton {
+    margin: 6rem 0 5rem 0;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.boton--primario {
+    background-color: black;
+    color: white;
+    border-radius: 5rem;
+    padding: 1rem 3rem;
+}
+
+.boton--primario:hover {
+    color: var(--colorNav);
+}
 /* Productos */
 
 .productos {
@@ -125,12 +160,18 @@ img {
 }
 
 .mi-card-marca {
-    font-size: 12px;
+    font-size: 15px;
     color: gray;
 }
 
-.mi-card-titulo {
+.mi-card-np {
     font-weight: bold;
+    font-size: 15px;
+}
+
+.mi-card-precio {
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .mi-card-container{
@@ -180,8 +221,137 @@ img {
 .nombre-cable {
     text-align: center;
     margin: 4rem 0 0 0;
+    font-weight: bold;
+}
+
+.col h2  {
+    font-size: 3rem;
+
+}
+
+.col .precio-producto  {
+    font-size: 2rem;
+}
+
+.col .descripcion-producto {
+    font-size: 2rem;
+    background-color: #EEEEEE;
 }
 
 .separador {
     margin-bottom: 4rem;
 }
+
+.img-p-cableaux {
+    height: 30rem;
+}
+
+.d-block {
+    height: 50rem;
+}
+
+/* Cable Inst */
+.img-p-cableinst {
+    height: 30rem;
+}
+
+/* Cable Inst Mono */
+
+.img-p-cableinstmono {
+    height: 30rem;
+}
+
+/* Cable Mic */
+
+.img-p-cablemic {
+    height: 30rem;
+}
+
+/* Cable Stereo */
+
+.img-p-cablestr {
+    height: 30rem;
+}
+
+/* Cable Tatuador */
+
+.img-p-cabletatuador {
+    height: 30rem;
+}
+
+/* Cable Canon Plug */
+
+.img-p-canonplug {
+    height: 30rem;
+}
+
+/* Sobre Nosotros */
+.contenedor-sobrenosotros {
+    display: flex;
+}
+
+.imagen-sobrenosotros {
+    width: 60rem;
+    margin-left: 15rem;
+}
+
+.titulo-sobrenosotros {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.texto-sobrenosotros {
+    margin-right: 10rem;
+    margin-top: 10rem;
+    font-size: 2rem;
+    background-color: #EEEEEE;
+    padding: 4rem;
+    justify-content: flex-end;
+}
+
+/* contacto */
+.contenedor2 {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.contacto-bg {
+    background-image: url(../img/banner/banner.png);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat ;
+}
+
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+
+.campo__field--textarea {
+    height: 20rem;
+}
+
