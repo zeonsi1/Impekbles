@@ -63,7 +63,6 @@ img {
     color: white;
     font-family: var(--fuenteEnlaces);
     font-weight: bold;
-
     padding-top: 1rem;
 }
 
@@ -246,9 +245,6 @@ img {
     height: 30rem;
 }
 
-.d-block {
-    height: 50rem;
-}
 
 /* Cable Inst */
 .img-p-cableinst {
