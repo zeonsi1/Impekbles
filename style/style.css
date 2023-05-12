@@ -7,8 +7,6 @@
     --colorPrincipal: #F1E228;
 }
 
-/* Globales */
-
 html {
     box-sizing: border-box;
     font-size: 62.5%;/* 1 rem = 10px */
@@ -18,6 +16,13 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* Globales */
 .carousel-caption h1 {
     display: inline;
     font-size: 4rem;
@@ -35,13 +40,60 @@ html {
     
 }
 
-h1, h2, h3, h4, a {
-    font-family: var(--fuentePrincipal);
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
     line-height: 1.2;
 }
-
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
 img {
     max-width: 100%;
+}
+
+/* Preheader */
+
+.contenedor-preheader {
+    background-color: var(--colorNav);
+    padding: 2px;
+
+}
+
+.nav-preheader {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+    .nav-preheader {
+        justify-content: end;
+        flex-wrap: wrap;
+        
+    }
+
+    .enlace-preheader {
+        margin-right: 40px;
+    }
+
+    .enlace-preheader:last-child{
+        margin-right: 7.5%;
+    }
+}
+
+.enlace-preheader {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
 }
 
 /* Header */
@@ -63,7 +115,7 @@ img {
     color: white;
     font-family: var(--fuenteEnlaces);
     font-weight: bold;
-    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .navegacion-enlace:hover {
@@ -118,10 +170,16 @@ img {
 }
 
 .boton {
-    margin: 6rem 0 5rem 0;
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
     text-align: center;
-    font-size: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    margin-top: 5%;
 }
 
 .boton--primario {
@@ -134,6 +192,7 @@ img {
 .boton--primario:hover {
     color: var(--colorNav);
 }
+
 /* Productos */
 
 .productos {
@@ -309,8 +368,8 @@ img {
 
 
 /* footer */
-.footer {
-    margin-top: 5rem;
+footer {
+    margin-top: 3%;
 }
 
 /* contacto */
@@ -362,3 +421,41 @@ img {
 .campo__field--textarea {
     height: 20rem;
 }
+
+.contenedor2 {
+    margin-bottom: -10rem;
+}
+
+.error {
+    background-color: rgb(185, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.correcto {
+    background-color: rgb(74, 185, 0);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+/* CARRITO */
+.icon-carrito {
+    width:32px;
+    height:32px;
+    fill : white;
+    transition-duration: 0s;
+    
+}
+
+.icon-carrito:hover {
+    fill: var(--colorNav);
+    transition-duration: 0s;
+    
+}
+
+/* REGISTRO */
