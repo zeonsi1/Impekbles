@@ -18,8 +18,8 @@ function leerTexto(e) {
 }
 
 // El Evento de Submit
-const formulario = document.querySelector('.formulario');
-formulario.addEventListener('submit', function(e){
+const formulario1 = document.querySelector('.formulario');
+formulario1.addEventListener('submit', function(e){
     e.preventDefault();
 
     // Validar formulario
@@ -52,3 +52,4 @@ function mostrarAlerta(mensaje, error = null) {
         alerta.remove();
     }, 5000);
 }
+
