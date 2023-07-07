@@ -9,17 +9,17 @@ const nombre = document.querySelector('#nombre');
 const email = document.querySelector('#email');
 const mensaje = document.querySelector('#mensaje');
 
-nombre.addEventListener('input', leerTexto)
-email.addEventListener('input', leerTexto)
-mensaje.addEventListener('input', leerTexto)
+nombre.addEventListener('input', leerTexto);
+email.addEventListener('input', leerTexto);
+mensaje.addEventListener('input', leerTexto);
 
 function leerTexto(e) {
     datos[e.target.id] = e.target.value;
 }
 
 // El Evento de Submit
-const formulario1 = document.querySelector('.formulario');
-formulario1.addEventListener('submit', function(e){
+const formulario = document.querySelector('.formulario');
+formulario.addEventListener('submit', function(e){
     e.preventDefault();
 
     // Validar formulario
